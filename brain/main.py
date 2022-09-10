@@ -43,7 +43,7 @@ def listen():
 
 
 def spambot():
-    s.open_new('https://web.whatsapp.com/send?phone=+{phone}')
+    s.open_new(f'https://web.whatsapp.com/send?phone=+{phone}')
 
     sleep(16)
 
