@@ -17,6 +17,7 @@ engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)
 
+phonenumber = None
 
 def talk(text):
     engine.say(text)
@@ -42,7 +43,7 @@ def listen():
 
 
 def spambot():
-    s.open_new('https://web.whatsapp.com/send?phone=+573193035676')
+    s.open_new('https://web.whatsapp.com/send?phone=+{phonenumber}')
 
     sleep(16)
 
